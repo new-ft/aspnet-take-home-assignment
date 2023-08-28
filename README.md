@@ -23,33 +23,33 @@ Create an ASP.NET Core Web API implementing the CQRS pattern for a `Person` enti
 
 ### Setup
 
-    - Create a new ASP.NET Core Web API project.
-    - Use any storage mechanism you prefer, including in memory
+- Create a new ASP.NET Core Web API project.
+- Use any storage mechanism you prefer, including in memory
 
 ### Command Model (Write Side)
 
-    - Implement a command to `AddPerson`.
-    - Implement a command to `RecordBirth`.
-    - Each command should have its handler.
+- Implement a command to `AddPerson`.
+- Implement a command to `RecordBirth`.
+- Each command should have its handler.
 
 ### Query Model (Read Side)
 
-    - Implement a query to `GetPersonId`.
-    - Implement a query to `GetAllPeople`.
-    - Each query should have its handler.
+- Implement a query to `GetPersonId`.
+- Implement a query to `GetAllPeople`.
+- Each query should have its handler.
 
 ### Validation
 
-    - Implement validation for the `AddPerson` command to ensure that at least one name and a gender are provided.
-    - Implement validation for the `RecordBirth` command to ensure that either `BirthDate` or `BirthLocation` is provided.
+- Implement validation for the `AddPerson` command to ensure that at least one name and a gender are provided.
+- Implement validation for the `RecordBirth` command to ensure that either `BirthDate` or `BirthLocation` is provided.
 
 ### Logging
 
-    - Introduce basic logging (using, for example, Serilog) to log when a command or query is handled.
+- Introduce basic logging (using, for example, Serilog) to log when a command or query is handled.
 
 ### Bonus (if time allows)
 
-    - Implement a basic versioning system for the `Person` entity. Whenever a person is updated, store its previous version. Provide a query to retrieve the version history of a person.
+- Implement a basic versioning system for the `Person` entity. Whenever a person is updated, store its previous version. Provide a query to retrieve the version history of a person.
 
 ### Expectations
 
@@ -58,12 +58,13 @@ Create an ASP.NET Core Web API implementing the CQRS pattern for a `Person` enti
 3. **Validation**: Proper input validation for commands.
 4. **Error Handling**: Handle possible errors gracefully. Return meaningful error messages and appropriate HTTP status codes.
 5. **Logging**: Basic logging to trace the flow of commands and queries.
-6. **Testing (Bonus)**: If possible, include unit tests for command/query handlers and integration tests for API endpoints.
+6. **Testin**: Include unit tests for command/query handlers and (Bonus) integration tests for API endpoints.
 7. **Domain concepts (Bonus)**: If possible, implement domain entities for names, dates, gender, or locations that will be more robust than just using strings or DateTime types
 
 ### Deliverables
 
 - A working ASP.NET Core Web API project implementing the above requirements.
+- A public GitHub repository containing the code
 - Documentation (can be a README file) explaining:
   - How to run the project.
   - Any assumptions made.

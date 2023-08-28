@@ -58,7 +58,7 @@ Create an ASP.NET Core Web API implementing the CQRS pattern for a `Person` enti
 3. **Validation**: Proper input validation for commands.
 4. **Error Handling**: Handle possible errors gracefully. Return meaningful error messages and appropriate HTTP status codes.
 5. **Logging**: Basic logging to trace the flow of commands and queries.
-6. **Testin**: Include unit tests for command/query handlers and (Bonus) integration tests for API endpoints.
+6. **Testing**: Include unit tests for command/query handlers and (Bonus) integration tests for API endpoints.
 7. **Domain concepts (Bonus)**: If possible, implement domain entities for names, dates, gender, or locations that will be more robust than just using strings or DateTime types
 
 ### Deliverables

@@ -8,7 +8,7 @@ Thank you for your interest in joining our team as a Senior .NET Engineer. As pa
 
 Create an ASP.NET Core Web API implementing the CQRS pattern for a `Person` entity.
 
-**Entity - Note:**
+**Entity - Person:**
 
 - `Id` (Guid)
 - `GivenName` (String)

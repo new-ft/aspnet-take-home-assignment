@@ -34,7 +34,7 @@ Create an ASP.NET Core Web API implementing the CQRS pattern for a `Person` enti
 
 ### Query Model (Read Side)
 
-- Implement a query to `GetPersonId`.
+- Implement a query to `GetPersonById`.
 - Implement a query to `GetAllPeople`.
 - Each query should have its handler.
 

@@ -40,6 +40,7 @@ Create an ASP.NET Core Web API implementing the CQRS pattern for a `Person` enti
 
 ### Validation
 
+- All API calls should check for the presence of a custom header x-client-id with a known (constant) value and return 400 if the header is not present or 401 if the header has an unrecognized value.
 - Implement validation for the `AddPerson` command to ensure that at least one name and a gender are provided.
 - Implement validation for the `RecordBirth` command to ensure that either `BirthDate` or `BirthLocation` is provided.
 
